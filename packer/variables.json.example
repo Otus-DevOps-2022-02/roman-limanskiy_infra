@@ -1,6 +1,6 @@
 {
 	"folder_id": "kmcdjnkm",
-	"service_account_key_file": "kmcdjnkm",
+	"service_account_key_file": "fake_account.json",
 	"source_image_family": "kmcdjnkm",
 	"ssh_username": "kmcdjnkm"
 }
