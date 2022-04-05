@@ -32,10 +32,19 @@ ssh -J login@bastion login@someinternalhost
 bastion_IP = 51.250.68.77
 someinternalhost_IP = 10.129.0.28
 
-ДЗ №4
+# ДЗ №4
 
 testapp_IP = 51.250.74.84
 testapp_port = 9292
 
 Деплой одной командой:
 ./startup-script.sh
+
+# ДЗ №5
+
+В процессе сделано:
+
+- Создан образ с ruby и mongo (fry)
+- Создан образ работающего приложения (bake)
+- Изучены дополнительные провиженеры packer
+- Написан скрипт запуска приложения
