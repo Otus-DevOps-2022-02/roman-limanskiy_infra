@@ -12,20 +12,20 @@ resource "yandex_lb_target_group" "lb-target-group" {
 }
 
 resource "yandex_lb_network_load_balancer" "lb" {
-  name = "load-balancer"
+  name      = "load-balancer"
   folder_id = var.folder_id
 
   listener {
-    name = "my-listener"
-    port = 8080
+    name        = "my-listener"
+    port        = 8080
     target_port = "9292"
     external_address_spec {
       ip_version = "ipv4"
     }
-  }  
+  }
   attached_target_group {
     target_group_id = yandex_lb_target_group.lb-target-group.id
-    
+
     healthcheck {
       name = "tcp"
       tcp_options {
