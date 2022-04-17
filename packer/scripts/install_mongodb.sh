@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+
+while pgrep -a apt; do echo 'Waiting for apt...'; sleep 1; done
+
 sudo apt-get install apt-transport-https ca-certificates
 
 wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
