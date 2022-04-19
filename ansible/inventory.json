@@ -1,0 +1,18 @@
+{
+  "instances": {
+    "hosts": [
+      "51.250.82.173",
+      "51.250.65.62"
+    ],
+   "_meta": {
+    "hostvars": {
+      "51.250.82.173": {
+        "host_specific_var": "app"
+      },
+      "51.250.65.62": {
+        "host_specific_var": "db"
+      }
+    }
+  }
+}
+}
