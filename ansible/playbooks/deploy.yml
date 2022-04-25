@@ -16,6 +16,7 @@
       dest: /home/ubuntu/reddit
       version: monolith
     notify: reload puma
+    ignore_errors: "{{ ansible_check_mode }}"
 
   - name: Bundle install
     bundler:
